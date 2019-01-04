@@ -1,0 +1,11 @@
+<div class="mainarea" (click)="onClickCanvas($event)">
+
+
+   
+            <div *ngFor = "let item of Pills" class="target" [ngStyle]= "GiveStyle2(item['x'],item['y'])"></div>
+   
+    <!-- <div class="target" [ngStyle]="GiveStyle()" ></div> -->
+</div>
+<p>{{ Dx }} {{ Dy }} </p>
+
+<h4>something itch {{ Pills.length }}</h4>
